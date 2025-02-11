@@ -79,6 +79,7 @@ def query():
     # 顯示成績表
     return student_info + student_scores.to_html(index=False) + "<br><a href='/'>返回查詢</a>"
    
-if __name__ == "__main__":  
-    app.run(host="0.0.0.0", port=5050, debug=True)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5050))  # 使用環境變數 PORT，若不存在則默認為 5050
+    app.run(host="0.0.0.0", port=port, debug=True)
 
