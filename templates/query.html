@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+content="width=device-width, initial-scale=1.0">
+    <title>學生成績查詢</title>
+</head>
+<body>
+    <h2>📖 學生成績查詢</h2>
+    <form action="/query" method="post">
+        <label>班級：</label>
+        <select name="class_id" required>
+            <option value="901">901</option>
+            <option value="904">904</option>
+            <option value="702">702</option>
+            <option value="901生活">901 
+生活</option>
+            <option value="904生活">904 
+生活</option>
+        </select>
+        <br><br>
+
+        <label>學號：</label>
+        <input type="text" name="student_id" 
+required><br><br>
+
+        <label>密碼：</label>
+        <input type="password" name="password" 
+required><br><br>
+
+        <button type="submit">查詢成績</button>
+    </form>
+</body>
+</html>
+
